@@ -5,6 +5,7 @@ def create_app():
 
     @app.route("/")
     def index():
-        return "Hello from Flask + Gunicorn + Docker!"
-
+        return """<p>Hello from Flask + Gunicorn + Nginx!</p>
+        <p>Hosted on my homelab</p>"""
+        
     return app
